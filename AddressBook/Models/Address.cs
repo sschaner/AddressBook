@@ -23,7 +23,6 @@ namespace AddressBook.Models
         [StringLength(2, ErrorMessage = "State cannot be longer than 2 characters.")]
         public string State { get; set; }
         [Required(ErrorMessage = "Please enter a zip code.")]
-        [StringLength(5, ErrorMessage = "Zip code cannot be longer than 5 characters.")]
         [DisplayName("Zip Code")]
         public int Zip { get; set; }
         public virtual Person Person { get; set; }
